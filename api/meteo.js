@@ -18,8 +18,6 @@ export class MeteoAPI {
       )
     ).data;
 
-    console.log(city, village, town);
-
     return city || village || town;
   }
 }
