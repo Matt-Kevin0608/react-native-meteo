@@ -23,8 +23,6 @@ export default function App() {
     getUserCoordinates();
   }, []);
 
-  console.log(coordinates);
-
   useEffect(() => {
     if (coordinates) {
       getWeatherByCoords(coordinates);
