@@ -9,6 +9,7 @@ export const s = StyleSheet.create({
     width: BACK_BTN_WITDTH,
   },
   header_txts: {
+    flex: 1,
     marginRight: BACK_BTN_WITDTH,
     alignItems: "center",
   },
