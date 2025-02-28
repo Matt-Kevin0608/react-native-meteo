@@ -21,6 +21,7 @@ export function Home({ weather, city }) {
           temperature={Math.round(currentWeather.temperature)}
           interpretation={currentInterpretation}
           city={city}
+          dailyWeather={weather.daily}
         />
       </View>
       <View style={s.searchbar_container}>

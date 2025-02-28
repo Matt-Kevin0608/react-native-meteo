@@ -1,6 +1,12 @@
-import { Txt } from "../../components/txt/Txt";
+import { Header } from "../../components/header/Header";
 import { s } from "./Forecasts.style";
+import { useRoute } from "@react-navigation/native";
 
 export function Forecasts({}) {
-  return <Txt></Txt>;
+  const { params } = useRoute();
+  return (
+    <>
+      <Header city={params.city} />
+    </>
+  );
 }
