@@ -4,6 +4,7 @@ import { Txt } from "../../components/txt/Txt";
 import { MeteoBasic } from "../../components/meteoBasic/MeteoBasic";
 import { getWeatherInterpretation } from "../../utils/meteo-utils";
 import { MeteoAdvanced } from "../../components/meteoAdvanced/MeteoAdvanced";
+import { SearchBar } from "../../components/searchBar/SearchBar";
 
 export function Home({ weather, city }) {
   const currentWeather = weather.current_weather;
@@ -25,7 +26,7 @@ export function Home({ weather, city }) {
         />
       </View>
       <View style={s.searchbar_container}>
-        <Txt>SearchBar</Txt>
+        <SearchBar />
       </View>
       <View style={s.meteo_advanced}>
         <MeteoAdvanced
